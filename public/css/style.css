@@ -1,0 +1,101 @@
+body {
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* === HEADER FULL WIDTH === */
+.topbar {
+    background-color: white;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 25px;
+}
+
+.topbar img {
+    object-fit: contain;
+}
+
+/* === SIDEBAR FIXED === */
+.sidebar {
+    position: fixed;
+    top: 70px; /* di bawah header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 70px);
+    background: white;
+    border-right: 1px solid #e5e5e5;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.sidebar .profile {
+    background: linear-gradient(135deg, #0073C0, #004467);
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.sidebar .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: #e9f2ff;
+    color: #0d6efd;
+}
+
+/* === KONTEN UTAMA === */
+.main-content {
+    margin-left: 250px; /* beri ruang sidebar */
+    margin-top: 70px; /* beri ruang header */
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* === KARTU SELAMAT DATANG === */
+.welcome-banner {
+    background: linear-gradient(90deg, #0073C0 0%, #004467 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+/* === KARTU & WARNA === */
+.card {
+    border-radius: 15px;
+}
+
+.alert-danger {
+    background-color: #fdecea;
+}
+
+.alert-success {
+    background-color: #eafaf1;
+}
+
+.alert-info {
+    background-color: #eaf4fe;
+}
+
+/* Hilangkan scrollbar di sidebar (opsional) */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
